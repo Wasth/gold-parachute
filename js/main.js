@@ -48,7 +48,7 @@ function init(){
 function setupBgMusic(){
     bgAudio = new Audio();
     bgAudio.loop = true;
-    bgAudio.src = '/sound/ourhymn.mp3';
+    bgAudio.src = 'sound/ourhymn.mp3';
     bgAudio.play();
 }
 function pausing(){
@@ -192,14 +192,14 @@ function pauseToggle(e){
 function playFailSound(){
     if(sound) {
         var failAudio = new Audio();
-        failAudio.src='/sound/fail.mp3'
+        failAudio.src='sound/fail.mp3'
         failAudio.play();
     }
 }
 function playClickSound(){
     if(sound && !pause && !dead) {
         var clickAudio = new Audio();
-        clickAudio.src='/sound/click.wav';
+        clickAudio.src='sound/click.wav';
         clickAudio.play();
     }
 }
